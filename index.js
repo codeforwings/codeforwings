@@ -3,5 +3,5 @@
  * bizare... what
  */
 export function printHelloWorld(){
-  console.log("hello world!");
+  console.log("hello world from index.js!");
 }
