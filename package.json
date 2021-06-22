@@ -1,0 +1,9 @@
+{
+  "name": "codeforwings",
+  "version": "1.0.0",
+  "description": "Tools for JS development",
+  "main": "index.js",
+  "repository": "https://github.com/codeforwings/codeforwings",
+  "author": "hychan48@github.com",
+  "license": "LICENCE"
+}
