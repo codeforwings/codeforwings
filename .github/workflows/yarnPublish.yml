@@ -5,7 +5,7 @@
 name: Node.js Package
 on:
   push:
-    # or logic
+    # or logic. best to leave it with tags only if you dont want it to run
     branches:
       - main
 #      #      - master
