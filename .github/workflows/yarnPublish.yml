@@ -3,15 +3,16 @@
 # feels very inefficient to do it this way
 # git push --delete origin 0.1.4
 name: Node.js Package
-version_tag: 0.1.5
 on:
   push:
     # or logic
     branches:
       - main
 #      #      - master
-#    tags:
-    # remember to update package.json and git tags...
+    tags:
+      - 0.1.5
+    # rem
+    ember to update package.json and git tags...
 #      - ${{version_tag}}
 #  release:
 #    types: [created]
@@ -19,21 +20,22 @@ jobs:
   yarnPublish:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{version_tag}}
+#      - run: echo ${{version_tag}}
 #      - uses: actions/checkout@v2
 #      # Setup .npmrc file to publish to npm
-#      - uses: actions/setup-node@v2
-#        with:
-#          node-version: '14.x'
-#          registry-url: 'https://registry.npmjs.org'
-#          always-auth: true
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+          always-auth: true
 #          # Defaults to the user or organization that owns the workflow file
-#          scope: 'codeforwings'
+          scope: 'codeforwings'
 #      - run: npm test
 #      - run: yarn
 #      - run: yarn publish --new-version --access public --tag latest
-#      - run: yarn publish --new-version ${{ version_tag }} --access public --tag latest
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: yarn publish --new-version 0.1.5 --access public --tag latest
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#          version: 0.1.5
           # using "Repository secrets"
 #          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
