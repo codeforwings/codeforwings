@@ -6,7 +6,7 @@ on:
 #      - main
 #      #      - master
     tags:
-      - v0.1.*
+      - 0.1.*
 #  release:
 #    types: [created]
 jobs:
