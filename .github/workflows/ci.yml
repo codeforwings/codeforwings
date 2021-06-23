@@ -10,7 +10,7 @@ on:
       - mainOne
       #      - master
   tags:
-      - ci
+    - ci
 
 jobs:
   ci:
