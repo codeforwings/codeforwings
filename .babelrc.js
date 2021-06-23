@@ -15,17 +15,20 @@
  * @type {[string, {root: string[], alias: {"~": string}}][]}
  */
 import * as path from 'path';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 // const path = require('path');
 // console.log(path.resolve(__dirname));
-const plugins = [
+export const plugins = [
   [
     require.resolve('babel-plugin-module-resolver'),
     {
       // root: ["/"],
       alias: {
-        // "~": "./codeforwings",
-        "~": path.resolve(__dirname, '../dist_npm_package'),
-        utils: path.resolve(__dirname, './dist_npm_package'),
+        "~": "./dist_npm_package",
+        // "~": path.resolve(__dirname, '../dist_npm_package'),
+        // utils: path.resolve(__dirname, './dist_npm_package'),
+        // utils: path.resolve(__dirname, './dist_npm_package'),
 
       }
     }

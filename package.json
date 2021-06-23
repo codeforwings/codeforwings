@@ -10,7 +10,8 @@
   "scripts": {
     "test:index": "node index.js",
     "test": "npx mocha test/index.test.js",
-    "build": "npx babel --source-maps inline"
+    "build": "npx babel --source-maps inline",
+    "babel_test": "npx babel test/index.test.mjs --out-file test/index.test.js"
   },
   "devDependencies": {
     "mocha": "^9.0.1",
