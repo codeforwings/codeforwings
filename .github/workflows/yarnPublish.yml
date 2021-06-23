@@ -7,8 +7,8 @@ version_tag: 0.1.5
 on:
   push:
     # or logic
-#    branches:
-#      - main
+    branches:
+      - main
 #      #      - master
 #    tags:
     # remember to update package.json and git tags...
