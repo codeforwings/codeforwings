@@ -4,13 +4,14 @@ on:
   push:
     branches:
       - mainOne
-      #      - master
+    tags:
+      - ci
   pull_request:
     branches:
       - mainOne
-      #      - master
-  tags:
-    - ci
+    tags:
+      - ci
+
 
 jobs:
   ci:
