@@ -1,0 +1,4 @@
+# .eslintrc.yml
+# not sure if this is useful like this?
+settings:
+  import/resolver: 'dist_npm_package'
