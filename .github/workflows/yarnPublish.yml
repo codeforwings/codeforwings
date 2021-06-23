@@ -27,6 +27,7 @@ jobs:
           always-auth: true
 #          # Defaults to the user or organization that owns the workflow file
           scope: 'codeforwings'
+      - run: npm i
       - run: npm test
       - run: yarn
 
