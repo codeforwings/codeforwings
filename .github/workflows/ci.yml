@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main_
-    #      - master
+      #      - master
   pull_request:
     branches:
       - main__
-    #      - master
+      #      - master
   tags:
       - ci
 
