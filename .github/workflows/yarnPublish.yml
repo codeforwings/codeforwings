@@ -1,5 +1,7 @@
 #  https://docs.github.com/en/actions/guides/publishing-nodejs-packages
 # feels very inefficient to do it this way
+# git push --delete origin 0.1.4
+version_tag: 0.1.4
 name: Node.js Package
 on:
   push:
@@ -9,7 +11,7 @@ on:
 #      #      - master
     tags:
     # remember to update package.json and git tags...
-      - 0.1.4
+      ${{version_tag}}
 #  release:
 #    types: [created]
 jobs:
@@ -28,7 +30,7 @@ jobs:
       - run: npm test
       - run: yarn
 #      - run: yarn publish --new-version --access public --tag latest
-      - run: yarn publish --new-version ${{ on.push.tags[0] }} --access public --tag latest
+      - run: yarn publish --new-version ${{ version_tag }} --access public --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           # using "Repository secrets"
