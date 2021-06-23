@@ -19,7 +19,7 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 // const path = require('path');
 // console.log(path.resolve(__dirname));
-export const plugins = [
+const plugins = [
   [
     require.resolve('babel-plugin-module-resolver'),
     {
@@ -36,3 +36,4 @@ export const plugins = [
   ]
 
 ];
+export default {plugins}
