@@ -1,12 +1,13 @@
 #  https://docs.github.com/en/actions/guides/publishing-nodejs-packages
+# feels very inefficient to do it this way
 name: Node.js Package
 on:
   push:
-#    branches:
-#      - main
+    branches:
+      - main
 #      #      - master
     tags:
-      - 0.1.*
+      - 0.1.0
 #  release:
 #    types: [created]
 jobs:
@@ -19,6 +20,7 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
+          always-auth: true
           # Defaults to the user or organization that owns the workflow file
           scope: 'codeforwings'
       - run: yarn
