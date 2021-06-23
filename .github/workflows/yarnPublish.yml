@@ -11,8 +11,7 @@ on:
 #      #      - master
     tags:
       - 0.1.5
-    # rem
-    ember to update package.json and git tags...
+    # remember to update package.json and git tags...
 #      - ${{version_tag}}
 #  release:
 #    types: [created]
