@@ -10,9 +10,9 @@ on:
 #    branches:
 #      - main
 #      #      - master
-    tags:
+#    tags:
     # remember to update package.json and git tags...
-      - ${{version_tag}}
+#      - ${{version_tag}}
 #  release:
 #    types: [created]
 jobs:
@@ -29,10 +29,11 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: 'codeforwings'
       - run: npm test
+      - run: echo ${{version_tag}}
       - run: yarn
 #      - run: yarn publish --new-version --access public --tag latest
-      - run: yarn publish --new-version ${{ version_tag }} --access public --tag latest
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#      - run: yarn publish --new-version ${{ version_tag }} --access public --tag latest
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           # using "Repository secrets"
 #          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
