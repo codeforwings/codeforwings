@@ -9,7 +9,7 @@ on:
 #      #      - master
     tags:
     # remember to update package.json and git tags...
-      - 0.1.*
+      - 0.1.3
 #  release:
 #    types: [created]
 jobs:
@@ -26,7 +26,8 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: 'codeforwings'
       - run: yarn
-      - run: yarn publish
+#      - run: yarn publish -- new-version --access public --tag latest
+      - run: yarn publish -- new-version ${{ on.tags[0] }} --access public --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           # using "Repository secrets"
