@@ -9,8 +9,5 @@
   "type": "module",
   "scripts": {
     "test": "node index.js"
-  },
-  "devDependencies": {
-    "esm": "^3.2.25"
   }
 }
