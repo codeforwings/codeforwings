@@ -8,7 +8,7 @@ on:
 #      - main
 #      #      - master
     tags:
-      - 0.1.0
+      - 0.1.1
 #  release:
 #    types: [created]
 jobs:
