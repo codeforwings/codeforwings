@@ -8,6 +8,10 @@
   "license": "AGPL-3.0-or-later",
   "type": "module",
   "scripts": {
-    "test": "node index.js"
+    "test:index": "node index.js",
+    "test": "mocha test/index.test.js"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.1"
   }
 }
