@@ -25,6 +25,7 @@ jobs:
           always-auth: true
           # Defaults to the user or organization that owns the workflow file
           scope: 'codeforwings'
+      - run: npm test
       - run: yarn
 #      - run: yarn publish --new-version --access public --tag latest
       - run: yarn publish --new-version ${{ on.push.tags[0] }} --access public --tag latest
