@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 #      - run: echo ${{version_tag}}
-#      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 #      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v2
         with:
