@@ -9,7 +9,7 @@ on:
 #      #      - master
     tags:
     # remember to update package.json and git tags...
-      - 0.1.*
+      - 0.1.2
 #  release:
 #    types: [created]
 jobs:
