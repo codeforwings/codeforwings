@@ -8,7 +8,8 @@ on:
 #      - main
 #      #      - master
     tags:
-      - 0.1.1
+    # remember to update package.json and git tags...
+      - 0.1.*
 #  release:
 #    types: [created]
 jobs:
