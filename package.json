@@ -5,5 +5,5 @@
   "main": "index.js",
   "repository": "https://github.com/codeforwings/codeforwings",
   "author": "hychan48@github.com",
-  "license": "LICENCE"
+  "license": "AGPL-3.0-or-later"
 }
