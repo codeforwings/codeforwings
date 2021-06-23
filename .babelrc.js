@@ -25,7 +25,9 @@ const plugins = [
     {
       // root: ["/"],
       alias: {
-        "~": "./dist_npm_package",
+        // "~": "./dist_npm_package",
+        "~": "../dist_npm_package",
+        // "~": "../",
         // "~": path.resolve(__dirname, '../dist_npm_package'),
         // utils: path.resolve(__dirname, './dist_npm_package'),
         // utils: path.resolve(__dirname, './dist_npm_package'),

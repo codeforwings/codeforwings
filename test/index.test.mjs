@@ -21,9 +21,11 @@ this.timeout(500);//500ms
 // import * as shit from 'dist_npm_package/dist_index.js'
 // import * as shit from '~/dist_index.js'
 import {printHelloWorld} from '~/dist_index.js'
+// import {printHelloWorld} from '../dist_npm_package/dist_index.js'
 describe('TestTitle', function(){
   it('actionHere', function(){
     //assert.strictEqual(1,1);//require assert
+    printHelloWorld()
   });
   it('async action here', async function(){
     //this.timeout(500);
