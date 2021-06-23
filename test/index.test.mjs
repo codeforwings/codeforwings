@@ -16,6 +16,11 @@ npm i esm module-alias mocha --save-dev
 test specific timeout
 this.timeout(500);//500ms
 */
+
+// import * as shit from 'utils/dist_index.js'
+// import * as shit from 'dist_npm_package/dist_index.js'
+// import * as shit from '~/dist_index.js'
+import {printHelloWorld} from '~/dist_index.js'
 describe('TestTitle', function(){
   it('actionHere', function(){
     //assert.strictEqual(1,1);//require assert
