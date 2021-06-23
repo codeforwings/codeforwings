@@ -1,4 +1,5 @@
 # .eslintrc.yml
 # not sure if this is useful like this?
+#https://github.com/benmosher/eslint-plugin-import
 settings:
   import/resolver: 'dist_npm_package'
