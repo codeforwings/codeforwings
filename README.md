@@ -11,3 +11,7 @@ yarn add @babel/core @babel/cli -D
 yarr add mocha -D
 
 ```
+
+# Runkit / deploy
+* perhaps babel the code first
+* copy into dist or something with git ignore

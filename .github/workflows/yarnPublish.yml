@@ -32,7 +32,7 @@ jobs:
       - run: yarn
 
 #      # Setup .npmrc file to publish to npm
-      - run: yarn publish --access public --tag latest
+      - run: yarn publish --access public --tag latest dist_npm_package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
