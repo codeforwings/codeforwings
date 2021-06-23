@@ -2,7 +2,7 @@
 # https://github.com/codeforwings/codeforwings/actions
 # feels very inefficient to do it this way
 # git push --delete origin 0.1.4
-version_tag: 0.1.4
+version_tag: 0.1.5
 name: Node.js Package
 on:
   push:

@@ -1,6 +1,6 @@
 {
   "name": "codeforwings",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Tools for JS development",
   "main": "index.js",
   "repository": "https://github.com/codeforwings/codeforwings",
